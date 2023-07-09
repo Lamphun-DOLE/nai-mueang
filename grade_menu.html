@@ -20,31 +20,28 @@ a:link, a:visited {
 
 
 table {
-  width: 250px;
+  width: 450px;
 }
 
 th {
-  height: 100px;
+  height: 50px;
 }
 
-.center{
-    position:absolute;
-    margin: 0 auto; 
-    width:200px;
-    height:50px;
-    left:45%;
-    top:20%;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px; /* vh stands for viewport height */
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ min-height: 0px; /* vh stands for viewport height */
 
 }
-.centerH{
-    position:absolute;
-    margin: 0 auto; 
-    width:300px;
-    height:50px;
-    left:41%;
-    top:10%;
 
-}
 </style>
 </head>
 <body>
@@ -52,15 +49,18 @@ th {
 
 
 
-  <table class="centerH"> 
+    <table class="container"> 
    <tbody> 
-       <tr> 
+          <tr> 
      <td><h3>เลือกระดับชั้นเพื่อดูผลการเรียน</h3></td> 
     </tr>
-       </tbody> 
-  </table>
-    <table class="center"> 
-   <tbody> 
+</tbody> 
+</table> 
+
+
+
+    <table class="content"> 
+<tbody> 
     <tr> 
      <td height="80" > <a href="https://appmintana.github.io/therdthai/exam_schedule.html" class="btn btn-warning btn-lg active" role="button" aria-pressed="true" target="_self">ประถม</a> </td> 
     </tr> 
